@@ -3,7 +3,7 @@ require "formula"
 class Splitcap < Formula
   homepage "http://www.netresec.com/?page=SplitCap"
   url "http://downloads.sourceforge.net/project/splitcap/SplitCap%202.1/SplitCap_2-1.zip"
-  sha1 "efb3df82f49d7354abe959be8c9e63d3f20413cb"
+  sha256 "426fc70a6e3f42fc7972ec04d312ded6cf22f8935b47e8f3cf1b708f1212695a"
   version "2.1"
 
   depends_on "mono"

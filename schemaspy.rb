@@ -3,7 +3,7 @@ require "formula"
 class Schemaspy < Formula
   homepage "http://schemaspy.sourceforge.net/"
   url "http://downloads.sourceforge.net/project/schemaspy/schemaspy/SchemaSpy%205.0.0/schemaSpy_5.0.0.jar"
-  sha1 "6666f6861e63a6f3061cd68e402cea9b094d1e98"
+  sha256 "4f46ec1647447a9282fd24db93ae797cf9d8f8ebef07f0e10c70ca41af6b9a43"
   version "5.0.0"
 
   depends_on "graphviz"
@@ -13,7 +13,7 @@ class Schemaspy < Formula
   # what to actually do with it. I should learn ruby.
   resource 'mysql-connector' do
     url "http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.30.zip"
-    sha1 "8019fbc4b00c7c3af91b90c893fd64c011c02af9"
+    sha256 "3d3a7a71a9db437b15623c657b21ef029f4374b9b7c543103a745a56f1ab2b53"
   end
 
   def install

@@ -8,8 +8,8 @@ class Schemaspy < Formula
 
   depends_on "graphviz"
 
-  # Wish I knew how to make the version into a variable that I can use 
-  # everywhere, but I keep running into scoping problems, so not sure 
+  # Wish I knew how to make the version into a variable that I can use
+  # everywhere, but I keep running into scoping problems, so not sure
   # what to actually do with it. I should learn ruby.
   resource 'mysql-connector' do
     url "http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.30.zip"
@@ -21,7 +21,7 @@ class Schemaspy < Formula
     libexec.install "schemaSpy_#{version}.jar"
 
     scr = (bin/"schemaspy")
-    scr.write <<-EOS.undent
+    scr.write <<~EOS
       #!/bin/sh
       exec java -jar #{libexec}/schemaSpy_#{version}.jar -t mysql -dp #{libexec}/mysql-connector-java-5.1.30-bin.jar "$@"
     EOS
